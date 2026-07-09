@@ -8,5 +8,10 @@ public class CannonBallLifeTime : MonoBehaviour
         Destroy(gameObject, 10f);
     }
 
+    private void OnMouseDown()
+    {
+        //Si clicamos con el ratón en la bola, también desaparcerá:
+        Destroy(gameObject);
+    }
 
 }

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8506452166369508830}
   - component: {fileID: 3151759620151651170}
   - component: {fileID: -3020554781770075577}
+  - component: {fileID: 8892616625111605439}
   m_Layer: 0
   m_Name: CannonBall
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -169,3 +170,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff5d39b8b0b4bb9458c0e876668ccc31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CannonBallLifeTime
+--- !u!114 &8892616625111605439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6543572154657191575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d1f644027505b94390aa6e993ee8108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyByClicking

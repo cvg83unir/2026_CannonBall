@@ -525,3 +525,4 @@ MonoBehaviour:
   cannonBallPrefab: {fileID: 6543572154657191575, guid: b1960210666d17b4a9fc95e6cad6a4c4, type: 3}
   shotPoint: {fileID: 2579828913942853460}
   shotSpeed: 15
+  fire: {fileID: -315932938597945477, guid: 8edf884591c17d24889d49b0b1cdf181, type: 3}

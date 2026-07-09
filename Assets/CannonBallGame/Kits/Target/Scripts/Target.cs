@@ -3,8 +3,20 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D elOtro)
     {
-        Score.score += 1;
+        if(elOtro.tag.StartsWith("Player"))
+        {
+            //Destuimos la diana que hayamos tocado...
+            Destroy(gameObject);
+
+            //...pero también otro examen:
+            Destroy(elOtro.gameObject);
+
+            Score.score += 1;
+            Globals.currentNumberOfTargets--;
+        }
+
     }
+
 }

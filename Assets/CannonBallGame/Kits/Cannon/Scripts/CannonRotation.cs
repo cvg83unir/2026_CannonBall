@@ -12,7 +12,6 @@ public class CannonRotation : MonoBehaviour
     [SerializeField] InputActionReference rotateLeft;
     [SerializeField] InputActionReference rotateRight;
 
-
     private Rigidbody2D rd2D;
 
     private void Awake()
@@ -55,6 +54,11 @@ public class CannonRotation : MonoBehaviour
         else
         {
             this.rd2D.angularVelocity = 0f;
+        }
+
+        if (Keyboard.current.tKey.isPressed)
+        {
+            Debug.Log("Número de Dianas: " + Globals.currentNumberOfTargets);
         }
 
         //if (Keyboard.current.aKey.isPressed)
