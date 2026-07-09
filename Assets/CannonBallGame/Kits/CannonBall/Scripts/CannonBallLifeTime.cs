@@ -14,4 +14,13 @@ public class CannonBallLifeTime : MonoBehaviour
         Destroy(gameObject);
     }
 
+    private void OnCollisionEnter2D(Collision2D elOtro)
+    {
+        //Si la bola golpea con la pared drecha se destruye, porque sino sería muy fácil dar a las dianas
+        if(elOtro.gameObject.CompareTag("LimitRight"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
