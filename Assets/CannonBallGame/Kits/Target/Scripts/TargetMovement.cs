@@ -97,12 +97,12 @@ public class TargetMovement : MonoBehaviour
     {
         if (this.directionSecondsCounter >= this.maxSecondsSameDirection)
         {
-            Debug.Log("Enemigo, cambiar sentido por máximo número de segundos en la misma dirección");
+            //Debug.Log("Enemigo, cambiar sentido por máximo número de segundos en la misma dirección");
             return true;
         }
         else if (this.changeDirectionDueToCollision == true)
         {
-            Debug.Log("Enemigo, cambiar sentido por colisión");
+            //Debug.Log("Enemigo, cambiar sentido por colisión");
             return true;
         }
         //else if (this.changeDirectionDueToOutOfBounds == true)
@@ -120,10 +120,6 @@ public class TargetMovement : MonoBehaviour
         if (elOtro.CompareTag("Limits"))
         { 
             this.changeDirectionDueToCollision = true;
-        }
-        else
-        {
-            Debug.Log("Contra qué colisiona");
         }
     }
 

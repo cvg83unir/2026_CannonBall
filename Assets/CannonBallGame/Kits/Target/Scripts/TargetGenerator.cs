@@ -35,10 +35,10 @@ public class TargetGenerator : MonoBehaviour
                     Instantiate(targetPrefab, positionToInstantiate, Quaternion.identity);
                     Globals.currentNumberOfTargets++;
                 }
-                else
-                {
-                    Debug.Log("Había otra diana cerca, hay que volver a intentarlo");
-                }
+                //else
+                //{
+                //    Debug.Log("Había otra diana cerca, hay que volver a intentarlo");
+                //}
 
             }
 
