@@ -83,7 +83,6 @@ MonoBehaviour:
   windmillsLayerMask:
     serializedVersion: 2
     m_Bits: 128
-  transformTest: {fileID: 0}
 --- !u!58 &1483601250749128150
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -164,8 +163,9 @@ GameObject:
   - component: {fileID: 35184325720237126}
   - component: {fileID: 7068918398686021200}
   - component: {fileID: 6053828071073111836}
-  m_Layer: 0
-  m_Name: Square
+  - component: {fileID: 2755579728400790643}
+  m_Layer: 8
+  m_Name: HorizontalSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -291,6 +291,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2755579728400790643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7374087870270413429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777b7194350501448819dd3890ce151f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitCounter
+  maximumHitNumber: 5
 --- !u!1 &8615954313460451752
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,8 +315,9 @@ GameObject:
   - component: {fileID: 3900632996102118892}
   - component: {fileID: 4901685776326822751}
   - component: {fileID: 8267067986763800526}
-  m_Layer: 0
-  m_Name: Square (1)
+  - component: {fileID: 8552419800810781118}
+  m_Layer: 8
+  m_Name: VerticalSquare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -429,3 +443,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8552419800810781118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8615954313460451752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777b7194350501448819dd3890ce151f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HitCounter
+  maximumHitNumber: 5
