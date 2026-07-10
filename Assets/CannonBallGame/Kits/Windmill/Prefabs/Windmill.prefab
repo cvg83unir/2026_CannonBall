@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 352215660742635713}
   - component: {fileID: 8171759146291077641}
   - component: {fileID: 1483601250749128150}
+  - component: {fileID: 2501733387519136838}
   m_Layer: 7
   m_Name: Windmill
   m_TagString: Untagged
@@ -119,6 +120,18 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.96
+--- !u!114 &2501733387519136838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4083224483832758084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afdac36fb2cc0a145a4e9b75e00f213f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindmillController
 --- !u!1 &4234555800972803608
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +317,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitCounter
   maximumHitNumber: 5
+  onBladeDestroyed:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &8615954313460451752
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,3 +472,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HitCounter
   maximumHitNumber: 5
+  onBladeDestroyed:
+    m_PersistentCalls:
+      m_Calls: []

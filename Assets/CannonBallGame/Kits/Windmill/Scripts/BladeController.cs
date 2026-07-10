@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
-public class HitCounter : MonoBehaviour
+public class BladeController : MonoBehaviour
 {
     [SerializeField] int maximumHitNumber = 5;
+
+    public UnityEvent onBladeDestroyed;
 
     private int currentHitNumber = 0;
     private SpriteRenderer sp;
@@ -24,6 +27,9 @@ public class HitCounter : MonoBehaviour
             {
                 //Si ya se ha llegado al máximo número de hits que soporta el aspa, la destruimos:
                 Destroy(this.gameObject);
+
+                //Disparamos el evento para que otros gameobjects sepan que un aspa se ha roto:
+                this.onBladeDestroyed.Invoke();
             } 
             else
             {
