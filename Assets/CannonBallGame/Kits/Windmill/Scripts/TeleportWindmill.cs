@@ -9,14 +9,13 @@ public class TeleportWindmill : MonoBehaviour
 
     [SerializeField] float timeToTeletransport = 60f;
 
-    [SerializeField] float radiusCheckWindmillNear = 1f;
+    [SerializeField] float radiusCheckWindmillNear = 2f;
     [SerializeField] LayerMask windmillsLayerMask = Physics2D.DefaultRaycastLayers;
     private float currentTimeToTeletransport = 0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame

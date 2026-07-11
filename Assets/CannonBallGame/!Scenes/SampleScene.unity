@@ -148,8 +148,67 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 143620209}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &143620208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 143620209}
+  - component: {fileID: 143620210}
+  m_Layer: 0
+  m_Name: SpawnWindmills
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &143620209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143620208}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1567073801}
+  - {fileID: 1719364754}
+  - {fileID: 31372768}
+  - {fileID: 1505172947}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &143620210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143620208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0626f08ca7af9064883c7e710feb097c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindmillGenerator
+  numberOfWindmillInScreen: 3
+  timeBetweenNewGeneration: 1
+  windmillPrefab: {fileID: 4083224483832758084, guid: e92547de3f09dce44b479e29ee1cf68d, type: 3}
+  minimumXValue: -3.46
+  maximumXValue: 4.92
+  minimumYValue: -3.55
+  maximumYValue: 3.41
+  radiusCheckTargetNear: 2
+  windmillsLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1001 &156964896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1350,10 +1409,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.929949, y: -3.5526807, z: 0}
-  m_LocalScale: {x: 9.565563, y: 8.889598, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 143620209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567073800
 GameObject:
@@ -1384,7 +1443,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 143620209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1612355448
 GameObject:
@@ -1550,10 +1609,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.4686162, y: -3.5526807, z: 0}
-  m_LocalScale: {x: 9.565563, y: 8.889598, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 143620209}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729798627
 GameObject:
@@ -1913,7 +1972,4 @@ SceneRoots:
   - {fileID: 1217873239}
   - {fileID: 1786104003}
   - {fileID: 1294680601}
-  - {fileID: 1567073801}
-  - {fileID: 1719364754}
-  - {fileID: 31372768}
-  - {fileID: 1505172947}
+  - {fileID: 143620209}
