@@ -15,6 +15,7 @@ public class Target : MonoBehaviour
 
             Score.score += 1;
             Globals.currentNumberOfTargets--;
+            Debug.Log("-Número de dianas: " + Globals.currentNumberOfTargets.ToString());
         }
 
     }

@@ -30,7 +30,7 @@ public class CannonShot : MonoBehaviour
     private void OnFire(InputAction.CallbackContext context)
     {
         //Sólo instanciaremos el disparo si ha pasado el tiempo mínimo necesario entre disparo:
-        if (this.currentShotWaitingTime >= this.requiredShotDelay)
+        if (this.currentShotWaitingTime >= this.requiredShotDelay && this.gameObject!=null)
         {
              InstantiateBall();
         }
@@ -60,6 +60,6 @@ public class CannonShot : MonoBehaviour
     private void OnDisable()
     {
         this.fire.action.Disable();
-        this.fire.action.started += OnFire;
+        this.fire.action.started -= OnFire;
     }
 }
